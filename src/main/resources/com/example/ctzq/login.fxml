@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.Controller">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #FFCC70;" BorderPane.alignment="CENTER">
+         <ImageView fitHeight="150.0" fitWidth="180.0" layoutX="35.0" layoutY="70.0" pickOnBounds="true">
+            <Image url="@frontlogo.png" />
+         </ImageView>
+         <Label layoutX="90.0" layoutY="220.0" text="ctzQ">
+            <font>
+               <Font name="Courier New Bold" size="30.0" />
+            </font>
+         </Label>
+         <Label layoutX="61.0" layoutY="330.0" text="Contact: 9841880507">
+            <font>
+               <Font name="Century" size="13.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <Label layoutX="100.0" layoutY="40.0" text="Login Here">
+            <font>
+               <Font name="Courier New Bold" size="25.0" />
+            </font>
+         </Label>
+         <Label layoutX="23.0" layoutY="118.0" text="Username:">
+            <font>
+               <Font name="Century" size="15.0" />
+            </font>
+         </Label>
+         <Label layoutX="25.0" layoutY="177.0" text="Password:">
+            <font>
+               <Font name="Century" size="15.0" />
+            </font>
+         </Label>
+         <TextField fx:id="username" layoutX="117.0" layoutY="115.0" promptText="Enter username" />
+         <PasswordField fx:id="password" layoutX="117.0" layoutY="174.0" promptText="Enter password" />
+         <Button fx:id="loginButton" layoutX="99.0" layoutY="245.0" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #FFCC70;" text="Login" textFill="#22668d">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Button>
+         <Button fx:id="registerpage_button" layoutX="203.0" layoutY="321.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Register here," textFill="#22668d" underline="true">
+            <font>
+               <Font name="Courier New" size="13.0" />
+            </font>
+         </Button>
+
+      </AnchorPane>
+   </center>
+</BorderPane>
