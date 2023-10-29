@@ -8,7 +8,7 @@
    <top>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffcc70;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="93.0" layoutY="23.0" prefHeight="40.0" prefWidth="420.0" style="-fx-border-color: #8ecddd; -fx-background-radius: 30;" text="Citizenship test for all citizens to take.">
+            <Label layoutX="90.0" layoutY="80.0" prefHeight="40.0" prefWidth="420.0" style="-fx-border-color: #8ecddd; -fx-background-radius: 30;" text="Citizenship test for all citizens to take.">
                <font>
                   <Font size="25.0" />
                </font>
@@ -18,7 +18,7 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <Label fx:id="welcome_text" layoutX="240.0" layoutY="90.0" prefHeight="40.0" prefWidth="115.0" text="Welcome!">
+            <Label fx:id="welcome_text" layoutX="242.0" layoutY="23.0" prefHeight="40.0" prefWidth="115.0" text="Welcome!">
                <font>
                   <Font size="25.0" />
                </font>
