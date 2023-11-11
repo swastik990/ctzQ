@@ -16,7 +16,7 @@
                <Font name="Courier New Bold" size="24.0" />
             </font>
          </Label>
-         <Label layoutX="26.0" layoutY="98.0" text="Play the Quiz">
+         <Label layoutX="14.0" layoutY="98.0" text="Play the Quiz">
             <font>
                <Font name="Century Gothic Bold" size="13.0" />
             </font>
@@ -26,12 +26,17 @@
                <Font name="Century Gothic Bold" size="13.0" />
             </font>
          </Label>
-         <Button fx:id="sign_up" layoutX="143.0" layoutY="92.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ffcc70;" text="Play Quiz" textFill="#22668d" underline="true">
+         <Button fx:id="playQuiz" layoutX="143.0" layoutY="92.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ffcc70;" text="Play Quiz" textFill="#22668d" underline="true">
             <font>
                <Font size="13.0" />
             </font>
          </Button>
          <Button fx:id="sign_up1" layoutX="143.0" layoutY="164.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ffcc70;" text="View Result" textFill="#22668d" underline="true">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Button>
+         <Button fx:id="backto_login" layoutX="20.0" layoutY="358.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="58.0" style="-fx-background-color: #8ECDDD;" text="Back" underline="true">
             <font>
                <Font size="13.0" />
             </font>
