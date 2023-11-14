@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5929ed2d-2186-4eed-89df-ab80abcb46aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/submit.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Submit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/result.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,6 +67,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\5th Semester IIMS College\Advanced Programming\javacode\ctzQ\src\main\resources\com\example\ctzq" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.ctzq" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
