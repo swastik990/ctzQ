@@ -4,8 +4,10 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import java.lang.String?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.ControllerTwo">
+<?import javafx.collections.FXCollections?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.registerPageController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
          <Label layoutX="100.0" layoutY="40.0" text="Resister Page">
@@ -35,8 +37,16 @@
          </Label>
          <TextField fx:id="user_name" layoutX="120.0" layoutY="93.0" prefHeight="26.0" prefWidth="163.0" promptText="Enter Full Name" />
          <DatePicker fx:id="dateOfBirth" layoutX="120.0" layoutY="136.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Date Of Birth" />
-         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0" />
-         <TextField fx:id="nationality" layoutX="120.0" layoutY="222.0" prefHeight="26.0" prefWidth="163.0" promptText="Enter Your Nationality" />
+         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0">
+            <items>
+               <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Male" />
+                  <String fx:value="Female" />
+                  <String fx:value="Other" />
+               </FXCollections>
+            </items>
+         </ChoiceBox>
+
          <Label layoutX="17.0" layoutY="270.0" text="Password:">
             <font>
                <Font name="Century Gothic Bold" size="13.0" />
@@ -58,6 +68,15 @@
                <Font size="13.0" />
             </font>
          </Button>
+         <ChoiceBox fx:id="nationality" layoutX="120.0" layoutY="222.0" prefHeight="26.0" prefWidth="163.0">
+            <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Malaysia" />
+               <String fx:value="Singapore" />
+               <String fx:value="Thailand" />
+            </FXCollections>
+            </items>
+         </ChoiceBox>
       </AnchorPane>
    </center>
    <left>

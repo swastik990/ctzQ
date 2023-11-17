@@ -60,9 +60,7 @@ public class Quiz {
         backto_dashboard.setOnAction(event -> backButton(event));
         load_submit.setOnAction(event -> nextButton(event));
 
-
         loadQuestions();
-
     }
 
     @FXML
@@ -144,8 +142,6 @@ public class Quiz {
         if (currentPage == 1) {
 
             try {
-
-
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
                 Parent root = loader.load();
                 Stage stage = (Stage) backto_dashboard.getScene().getWindow();
@@ -188,12 +184,6 @@ public class Quiz {
         }
 
     }
-
-
-
-
-
-
 
 
 
@@ -341,171 +331,85 @@ public class Quiz {
 
         if (currentPage == 1) {
             // Question 1
-            if (answer.equals("Loy Krathong")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Loy Krathong");
         }
         if (currentPage == 2) {
             // Question 2
-            if (answer.equals("Jalan Alor")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Jalan Alor");
         }
         if (currentPage == 3) {
             // Question 3
-            if (answer.equals("Songkran")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Songkran");
         }
         if (currentPage == 4) {
             // Question 4
-            if (answer.equals("Orchard Road")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Orchard Road");
         }
         if (currentPage == 5) {
             // Question 5
-            if (answer.equals("Bangkok")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Bangkok");
         }
         if (currentPage == 6) {
             // Question 6
-            if (answer.equals("Nasi Lemak")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Nasi Lemak");
         }
         if (currentPage == 7) {
             // Question 7
-            if (answer.equals("Chinese New Year")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Chinese New Year");
         }
         if (currentPage == 8) {
             // Question 8
-            if (answer.equals("Muhyiddin Yassin")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Muhyiddin Yassin");
         }
         if (currentPage == 9) {
             // Question 9
-            if (answer.equals("Thailand")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Thailand");
         }
         if (currentPage == 10) {
             // Question 10
-            if (answer.equals("Chao Phraya River")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Chao Phraya River");
         }
         if (currentPage == 11) {
             // Question 11
-            if (answer.equals("Thai")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Thai");
         }
         if (currentPage == 12) {
             // Question 12
-            if (answer.equals("Buddhism")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Buddhism");
         }
         if (currentPage == 13) {
             // Question 13
-            if (answer.equals("Lee Kuan Yew")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Lee Kuan Yew");
         }
         if (currentPage == 14) {
             // Question 14
-            if (answer.equals("Petronas Twin Towers")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Petronas Twin Towers");
         }
         if (currentPage == 15) {
             // Question 15
-            if (answer.equals("Malay")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Malay");
         }
         if (currentPage == 16) {
             // Question 16
-            if (answer.equals("Merlion")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Merlion");
         }
         if (currentPage == 17) {
             // Question 17
-            if (answer.equals("1965")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("1965");
         }
         if (currentPage == 18) {
             // Question 18
-            if (answer.equals("Islam")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Islam");
         }
         if (currentPage == 19) {
             // Question 19
-            if (answer.equals("Langkawi")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Langkawi");
         }
         if (currentPage == 20) {
             // Question 20
-            if (answer.equals("Singapore")) {
-                return true;
-            } else {
-                return false;
-            }
+            return answer.equals("Singapore");
         }
         return false;
     }
-
-
-
-
-
-
 
 }

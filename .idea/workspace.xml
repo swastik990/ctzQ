@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5929ed2d-2186-4eed-89df-ab80abcb46aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Submit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/result.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/registerPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/ControllerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/loginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Dashboard.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/loggedin.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/submit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/submit.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +42,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -43,7 +52,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2XNeaXx1gH0cv9vTsJTLYrZLtrY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,6 +66,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_directory_selection&quot;: &quot;E:/4thSem/AdvanceProgram/www/ctzQ/src/main/java/com/example/ctzq&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/5th Semester IIMS College/Advanced Programming/javacode/ctzQ/lib/mysql-connector-j-8.2.0.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -85,6 +97,17 @@
       <updated>1698474029123</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

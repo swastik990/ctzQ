@@ -1,0 +1,541 @@
+Index: src/main/resources/com/example/ctzq/Quiz.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.control.ProgressBar?>\r\n<?import javafx.scene.image.Image?>\r\n<?import javafx.scene.image.ImageView?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.layout.BorderPane?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<BorderPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/20.0.1\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.ctzq.Quiz\">\r\n    <center>\r\n        <AnchorPane prefHeight=\"200.0\" prefWidth=\"350.0\" BorderPane.alignment=\"CENTER\">\r\n            <Label layoutX=\"125.0\" layoutY=\"14.0\" prefHeight=\"41.0\" prefWidth=\"119.0\" text=\"Question\">\r\n                <font>\r\n                    <Font name=\"Courier New Bold\" size=\"24.0\" />\r\n                </font>\r\n            </Label>\r\n            <Label layoutX=\"11.0\" layoutY=\"80.0\" prefHeight=\"75.0\" prefWidth=\"424.0\" style=\"-fx-background-color: #8ECDDD; -fx-background-radius: 18;\" text=\"Qtn\">\r\n                <font>\r\n                    <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n                </font>\r\n            </Label>\r\n            <Button fx:id=\"option1\" layoutX=\"67.0\" layoutY=\"196.0\" mnemonicParsing=\"false\" prefHeight=\"46.0\" prefWidth=\"118.0\" style=\"-fx-background-color: #ffcc70; -fx-background-radius: 20;\" text=\"Option1\" textAlignment=\"JUSTIFY\" textFill=\"#22668d\" underline=\"true\">\r\n                <font>\r\n                    <Font name=\"System Bold\" size=\"13.0\" />\r\n                </font>\r\n            </Button>\r\n         <ProgressBar fx:id=\"progressBar\" layoutX=\"105.0\" layoutY=\"366.0\" prefHeight=\"20.0\" prefWidth=\"249.0\" progress=\"0.0\" style=\"-fx-background-color: #8ECDDD;\" />\r\n         <Button layoutX=\"372.0\" layoutY=\"362.0\" mnemonicParsing=\"false\" onAction=\"#nextButton\" prefHeight=\"25.0\" prefWidth=\"62.0\" style=\"-fx-background-color: #ffcc70; -fx-background-radius: 30;\" text=\"Next\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font name=\"System Bold Italic\" size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n         <Button layoutX=\"24.0\" layoutY=\"362.0\" mnemonicParsing=\"false\" onAction=\"#backButton\" prefHeight=\"25.0\" prefWidth=\"62.0\" style=\"-fx-background-color: #ffcc70; -fx-background-radius: 30;\" text=\"Back\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font name=\"System Bold Italic\" size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n         <Button fx:id=\"option2\" layoutX=\"254.0\" layoutY=\"196.0\" mnemonicParsing=\"false\" prefHeight=\"46.0\" prefWidth=\"118.0\" style=\"-fx-background-color: #ffcc70; -fx-background-radius: 20;\" text=\"Option2\" textAlignment=\"JUSTIFY\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font name=\"System Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n         <Button fx:id=\"option4\" layoutX=\"254.0\" layoutY=\"280.0\" mnemonicParsing=\"false\" prefHeight=\"46.0\" prefWidth=\"118.0\" style=\"-fx-background-color: #ffcc70; -fx-background-radius: 20;\" text=\"Option4\" textAlignment=\"JUSTIFY\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font name=\"System Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n         <Button fx:id=\"option3\" layoutX=\"67.0\" layoutY=\"281.0\" mnemonicParsing=\"false\" prefHeight=\"43.0\" prefWidth=\"118.0\" style=\"-fx-background-color: #ffcc70; -fx-background-radius: 20;\" text=\"Option3\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font name=\"System Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n         <Label fx:id=\"text\" layoutX=\"219.0\" layoutY=\"367.0\" text=\"1\" textFill=\"#d18b12\">\r\n            <font>\r\n               <Font name=\"System Bold\" size=\"12.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label fx:id=\"text1\" layoutX=\"244.0\" layoutY=\"17.0\" prefHeight=\"30.0\" prefWidth=\"34.0\" text=\"1\" textFill=\"#0b0b0b\">\r\n            <font>\r\n               <Font name=\"System Bold\" size=\"24.0\" />\r\n            </font>\r\n         </Label>\r\n        </AnchorPane>\r\n    </center>\r\n    <left>\r\n        <AnchorPane prefHeight=\"400.0\" prefWidth=\"140.0\" style=\"-fx-background-color: #ffcc70;\" BorderPane.alignment=\"CENTER\">\r\n            <ImageView fitHeight=\"65.0\" fitWidth=\"90.0\" layoutX=\"20.0\" layoutY=\"14.0\" pickOnBounds=\"true\">\r\n                <Image url=\"@frontlogo.png\" />\r\n            </ImageView>\r\n            <Label layoutX=\"43.0\" layoutY=\"79.0\" prefHeight=\"30.0\" prefWidth=\"54.0\" text=\"ctzQ\">\r\n                <font>\r\n                    <Font name=\"Courier New Bold\" size=\"18.0\" />\r\n                </font>\r\n            </Label>\r\n            <Label layoutX=\"9.0\" layoutY=\"342.0\" text=\"Contact: 9841880507\">\r\n                <font>\r\n                    <Font size=\"13.0\" />\r\n                </font>\r\n            </Label>\r\n        </AnchorPane>\r\n    </left>\r\n</BorderPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/ctzq/Quiz.fxml b/src/main/resources/com/example/ctzq/Quiz.fxml
+--- a/src/main/resources/com/example/ctzq/Quiz.fxml	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
++++ b/src/main/resources/com/example/ctzq/Quiz.fxml	(date 1699716894919)
+@@ -1,23 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Button?>
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.control.ProgressBar?>
+-<?import javafx.scene.image.Image?>
+-<?import javafx.scene.image.ImageView?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.layout.BorderPane?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.image.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.Quiz">
++<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.Quiz">
+     <center>
+         <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+-            <Label layoutX="125.0" layoutY="14.0" prefHeight="41.0" prefWidth="119.0" text="Question">
++            <Label layoutX="134.0" layoutY="14.0" prefHeight="41.0" prefWidth="119.0" text="Question">
+                 <font>
+                     <Font name="Courier New Bold" size="24.0" />
+                 </font>
+             </Label>
+-            <Label layoutX="11.0" layoutY="80.0" prefHeight="75.0" prefWidth="424.0" style="-fx-background-color: #8ECDDD; -fx-background-radius: 18;" text="Qtn">
++            <Label layoutX="18.0" layoutY="80.0" prefHeight="75.0" prefWidth="424.0" style="-fx-background-color: #8ECDDD; -fx-background-radius: 18;" text="QN">
+                 <font>
+                     <Font name="Century Gothic Bold" size="13.0" />
+                 </font>
+@@ -58,7 +54,7 @@
+                <Font name="System Bold" size="12.0" />
+             </font>
+          </Label>
+-         <Label fx:id="text1" layoutX="244.0" layoutY="17.0" prefHeight="30.0" prefWidth="34.0" text="1" textFill="#0b0b0b">
++         <Label fx:id="text1" layoutX="264.0" layoutY="17.0" prefHeight="35.0" prefWidth="33.0" text="1" textFill="#0b0b0b">
+             <font>
+                <Font name="System Bold" size="24.0" />
+             </font>
+@@ -67,10 +63,10 @@
+     </center>
+     <left>
+         <AnchorPane prefHeight="400.0" prefWidth="140.0" style="-fx-background-color: #ffcc70;" BorderPane.alignment="CENTER">
+-            <ImageView fitHeight="65.0" fitWidth="90.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true">
++            <ImageView fitHeight="65.0" fitWidth="90.0" layoutX="24.0" layoutY="38.0" pickOnBounds="true">
+                 <Image url="@frontlogo.png" />
+             </ImageView>
+-            <Label layoutX="43.0" layoutY="79.0" prefHeight="30.0" prefWidth="54.0" text="ctzQ">
++            <Label layoutX="42.0" layoutY="103.0" prefHeight="30.0" prefWidth="50.0" text="ctzQ">
+                 <font>
+                     <Font name="Courier New Bold" size="18.0" />
+                 </font>
+Index: src/main/java/com/example/ctzq/HelloApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.ctzq;\r\n\r\nimport javafx.application.Application;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Scene;\r\nimport javafx.stage.Stage;\r\nimport javafx.scene.Parent;\r\n\r\nimport java.io.IOException;\r\n\r\n\r\npublic class HelloApplication extends Application {\r\n\r\n    @Override\r\n    public void start(Stage PrimaryStage) throws Exception {\r\n\r\n            Parent root = FXMLLoader.load(getClass().getResource(\"login.fxml\"));\r\n            PrimaryStage.setTitle(\"Login!\");\r\n            PrimaryStage.setScene(new Scene(root, 600, 400));\r\n            PrimaryStage.show();\r\n\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch(args);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/ctzq/HelloApplication.java b/src/main/java/com/example/ctzq/HelloApplication.java
+--- a/src/main/java/com/example/ctzq/HelloApplication.java	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
++++ b/src/main/java/com/example/ctzq/HelloApplication.java	(date 1699706651768)
+@@ -16,7 +16,7 @@
+ 
+             Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+             PrimaryStage.setTitle("Login!");
+-            PrimaryStage.setScene(new Scene(root, 600, 400));
++            PrimaryStage.setScene(new Scene(root, 600, 400, true));
+             PrimaryStage.show();
+ 
+     }
+Index: src/main/resources/com/example/ctzq/register.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.image.*?>\r\n<?import javafx.scene.layout.*?>\r\n<?import javafx.scene.text.*?>\r\n\r\n<BorderPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.ctzq.ControllerTwo\">\r\n   <center>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"350.0\" BorderPane.alignment=\"CENTER\">\r\n         <Label layoutX=\"100.0\" layoutY=\"40.0\" text=\"Resister Page\">\r\n            <font>\r\n               <Font name=\"Courier New Bold\" size=\"24.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"15.0\" layoutY=\"98.0\" text=\"Full Name:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"14.0\" layoutY=\"141.0\" text=\"Date of Birth:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"14.0\" layoutY=\"227.0\" text=\"Nationality:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"15.0\" layoutY=\"184.0\" text=\"Gender:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <TextField fx:id=\"user_name\" layoutX=\"120.0\" layoutY=\"93.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" promptText=\"Enter Full Name\" />\r\n         <DatePicker fx:id=\"dateOfBirth\" layoutX=\"120.0\" layoutY=\"136.0\" prefHeight=\"26.0\" prefWidth=\"164.0\" promptText=\"Enter Date Of Birth\" />\r\n         <ChoiceBox fx:id=\"gender\" layoutX=\"120.0\" layoutY=\"179.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" />\r\n         <TextField fx:id=\"nationality\" layoutX=\"120.0\" layoutY=\"222.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" promptText=\"Enter Your Nationality\" />\r\n         <Label layoutX=\"17.0\" layoutY=\"270.0\" text=\"Password:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <TextField fx:id=\"pass_word\" layoutX=\"120.0\" layoutY=\"265.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" promptText=\"Set You Password\" />\r\n         <Button fx:id=\"backto_login\" layoutX=\"263.0\" layoutY=\"344.0\" mnemonicParsing=\"false\" style=\"-fx-background-color: white;\" text=\"Login\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n         <Label layoutX=\"116.0\" layoutY=\"350.0\" text=\"Already Registered?\">\r\n            <font>\r\n               <Font name=\"Courier New\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Button fx:id=\"sign_up\" layoutX=\"116.0\" layoutY=\"307.0\" mnemonicParsing=\"false\" prefHeight=\"27.0\" prefWidth=\"117.0\" style=\"-fx-background-color: #ffcc70;\" text=\"Sign-Up\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n      </AnchorPane>\r\n   </center>\r\n   <left>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"250.0\" style=\"-fx-background-color: #ffcc70;\" BorderPane.alignment=\"CENTER\">\r\n         <ImageView fitHeight=\"150.0\" fitWidth=\"180.0\" layoutX=\"35.0\" layoutY=\"70.0\" pickOnBounds=\"true\">\r\n            <Image url=\"@frontlogo.png\" />\r\n         </ImageView>\r\n         <Label layoutX=\"90.0\" layoutY=\"220.0\" text=\"ctzQ\">\r\n            <font>\r\n               <Font name=\"Courier New\" size=\"30.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"65.0\" layoutY=\"343.0\" text=\"Contact: 9841880507\">\r\n            <font>\r\n               <Font size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n      </AnchorPane>\r\n   </left>\r\n</BorderPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/ctzq/register.fxml b/src/main/resources/com/example/ctzq/register.fxml
+--- a/src/main/resources/com/example/ctzq/register.fxml	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
++++ b/src/main/resources/com/example/ctzq/register.fxml	(date 1699709779552)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
++<?import java.lang.*?>
+ <?import javafx.scene.control.*?>
+ <?import javafx.scene.image.*?>
+ <?import javafx.scene.layout.*?>
+@@ -35,7 +36,11 @@
+          </Label>
+          <TextField fx:id="user_name" layoutX="120.0" layoutY="93.0" prefHeight="26.0" prefWidth="163.0" promptText="Enter Full Name" />
+          <DatePicker fx:id="dateOfBirth" layoutX="120.0" layoutY="136.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Date Of Birth" />
+-         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0" />
++         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0">
++            <String fx:value="Male" />
++            <String fx:value="Female" />
++            <String fx:value="Other" />
++         </ChoiceBox>
+          <TextField fx:id="nationality" layoutX="120.0" layoutY="222.0" prefHeight="26.0" prefWidth="163.0" promptText="Enter Your Nationality" />
+          <Label layoutX="17.0" layoutY="270.0" text="Password:">
+             <font>
+@@ -43,7 +48,7 @@
+             </font>
+          </Label>
+          <TextField fx:id="pass_word" layoutX="120.0" layoutY="265.0" prefHeight="26.0" prefWidth="163.0" promptText="Set You Password" />
+-         <Button fx:id="backto_login" layoutX="263.0" layoutY="344.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Login" textFill="#22668d" underline="true">
++         <Button fx:id="backto_login" layoutX="263.0" layoutY="344.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 30;" text="Login" textFill="#22668d" underline="true">
+             <font>
+                <Font size="13.0" />
+             </font>
+Index: src/main/java/com/example/ctzq/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.ctzq;\r\n\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Button;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.IOException;\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\n\r\n\r\npublic class Controller implements Initializable {\r\n\r\n    @FXML\r\n    private Button registerpage_button;\r\n    @FXML\r\n    private Button loginButton;\r\n\r\n    @Override\r\n    public void initialize(URL url, ResourceBundle resourceBundle) {\r\n        registerpage_button.setOnAction(event -> loadRegisterPage());\r\n        loginButton.setOnAction(event -> loadDashboard());\r\n\r\n    }\r\n    public void loadRegisterPage(){\r\n        try {\r\n            FXMLLoader loader = new FXMLLoader(getClass().getResource(\"register.fxml\"));\r\n            Parent root = loader.load();\r\n            Stage stage = (Stage) registerpage_button.getScene().getWindow();\r\n            stage.setTitle(\"Register!\");\r\n            stage.setScene(new Scene(root, 600, 400));\r\n            stage.show();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n\r\n    }\r\n\r\n\r\n    public void loadDashboard(){\r\n        try {\r\n            FXMLLoader loader = new FXMLLoader(getClass().getResource(\"dashboard.fxml\"));\r\n            Parent root = loader.load();\r\n            Stage stage = (Stage) loginButton.getScene().getWindow();\r\n            stage.setTitle(\"Dashboard!\");\r\n            stage.setScene(new Scene(root, 600, 400));\r\n            stage.show();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/ctzq/Controller.java b/src/main/java/com/example/ctzq/Controller.java
+--- a/src/main/java/com/example/ctzq/Controller.java	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
++++ b/src/main/java/com/example/ctzq/Controller.java	(date 1699709762624)
+@@ -20,13 +20,17 @@
+     @FXML
+     private Button loginButton;
+ 
++
+     @Override
+     public void initialize(URL url, ResourceBundle resourceBundle) {
+         registerpage_button.setOnAction(event -> loadRegisterPage());
+         loginButton.setOnAction(event -> loadDashboard());
+ 
++
++
+     }
+-    public void loadRegisterPage(){
++
++    public void loadRegisterPage() {
+         try {
+             FXMLLoader loader = new FXMLLoader(getClass().getResource("register.fxml"));
+             Parent root = loader.load();
+@@ -41,7 +45,7 @@
+     }
+ 
+ 
+-    public void loadDashboard(){
++    public void loadDashboard() {
+         try {
+             FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
+             Parent root = loader.load();
+@@ -54,5 +58,4 @@
+         }
+ 
+     }
+-
+ }
+\ No newline at end of file
+Index: src/main/resources/com/example/ctzq/loggedin.fxml
+===================================================================
+diff --git a/src/main/resources/com/example/ctzq/loggedin.fxml b/src/main/resources/com/example/ctzq/loggedin.fxml
+deleted file mode 100644
+--- a/src/main/resources/com/example/ctzq/loggedin.fxml	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
++++ /dev/null	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
+@@ -1,45 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
+-<?import javafx.scene.text.*?>
+-
+-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+-   <top>
+-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffcc70;" BorderPane.alignment="CENTER">
+-         <children>
+-            <Label layoutX="90.0" layoutY="80.0" prefHeight="40.0" prefWidth="420.0" style="-fx-border-color: #8ecddd; -fx-background-radius: 30;" text="Citizenship test for all citizens to take.">
+-               <font>
+-                  <Font size="25.0" />
+-               </font>
+-            </Label>
+-            <Label layoutX="211.0" layoutY="150.0" prefHeight="36.0" prefWidth="179.0" text="Are You Ready?">
+-               <font>
+-                  <Font size="25.0" />
+-               </font>
+-            </Label>
+-            <Label fx:id="welcome_text" layoutX="242.0" layoutY="23.0" prefHeight="40.0" prefWidth="115.0" text="Welcome!">
+-               <font>
+-                  <Font size="25.0" />
+-               </font>
+-            </Label>
+-         </children>
+-      </AnchorPane>
+-   </top>
+-   <bottom>
+-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: whitw;" BorderPane.alignment="CENTER">
+-         <children>
+-            <Button fx:id="startQuiz" layoutX="70.0" layoutY="86.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="199.0" style="-fx-background-color: #8ecddd; -fx-background-radius: 30;" text="Yes, I'm ready.">
+-               <font>
+-                  <Font size="24.0" />
+-               </font>
+-            </Button>
+-            <Button fx:id="logOut" layoutX="347.0" layoutY="88.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="199.0" style="-fx-background-color: #8ecddd; -fx-background-radius: 30;" text="No, Logout.">
+-               <font>
+-                  <Font size="24.0" />
+-               </font>
+-            </Button>
+-         </children>
+-      </AnchorPane>
+-   </bottom>
+-</BorderPane>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1699706650398)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/shelved.patch	(date 1699706650398)
+@@ -0,0 +1,181 @@
++Index: src/main/java/com/example/ctzq/HelloApplication.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>package com.example.ctzq;\r\n\r\nimport javafx.application.Application;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Scene;\r\nimport javafx.stage.Stage;\r\nimport javafx.scene.Parent;\r\n\r\nimport java.io.IOException;\r\n\r\n\r\npublic class HelloApplication extends Application {\r\n    @Override\r\n    public void start(Stage PrimaryStage) throws Exception {\r\n\r\n            Parent root = FXMLLoader.load(getClass().getResource(\"login.fxml\"));\r\n            PrimaryStage.setTitle(\"Login!\");\r\n            PrimaryStage.setScene(new Scene(root, 600, 400));\r\n            PrimaryStage.show();\r\n\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch(args);\r\n    }\r\n}
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/main/java/com/example/ctzq/HelloApplication.java b/src/main/java/com/example/ctzq/HelloApplication.java
++--- a/src/main/java/com/example/ctzq/HelloApplication.java	(revision 8b839c64d75a0b7580093678684126276c3203ba)
+++++ b/src/main/java/com/example/ctzq/HelloApplication.java	(date 1698805575029)
++@@ -15,7 +15,7 @@
++ 
++             Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
++             PrimaryStage.setTitle("Login!");
++-            PrimaryStage.setScene(new Scene(root, 600, 400));
+++            PrimaryStage.setScene(new Scene(root, 600, 400, true));
++             PrimaryStage.show();
++ 
++     }
++Index: src/main/resources/com/example/ctzq/loggedin.fxml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.layout.*?>\r\n<?import javafx.scene.text.*?>\r\n\r\n<BorderPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\">\r\n   <top>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"200.0\" style=\"-fx-background-color: #ffcc70;\" BorderPane.alignment=\"CENTER\">\r\n         <children>\r\n            <Label layoutX=\"90.0\" layoutY=\"80.0\" prefHeight=\"40.0\" prefWidth=\"420.0\" style=\"-fx-border-color: #8ecddd; -fx-background-radius: 30;\" text=\"Citizenship test for all citizens to take.\">\r\n               <font>\r\n                  <Font size=\"25.0\" />\r\n               </font>\r\n            </Label>\r\n            <Label layoutX=\"211.0\" layoutY=\"150.0\" prefHeight=\"36.0\" prefWidth=\"179.0\" text=\"Are You Ready?\">\r\n               <font>\r\n                  <Font size=\"25.0\" />\r\n               </font>\r\n            </Label>\r\n            <Label fx:id=\"welcome_text\" layoutX=\"242.0\" layoutY=\"23.0\" prefHeight=\"40.0\" prefWidth=\"115.0\" text=\"Welcome!\">\r\n               <font>\r\n                  <Font size=\"25.0\" />\r\n               </font>\r\n            </Label>\r\n         </children>\r\n      </AnchorPane>\r\n   </top>\r\n   <bottom>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"200.0\" style=\"-fx-background-color: whitw;\" BorderPane.alignment=\"CENTER\">\r\n         <children>\r\n            <Button fx:id=\"startQuiz\" layoutX=\"70.0\" layoutY=\"86.0\" mnemonicParsing=\"false\" prefHeight=\"57.0\" prefWidth=\"199.0\" style=\"-fx-background-color: #8ecddd; -fx-background-radius: 30;\" text=\"Yes, I'm ready.\">\r\n               <font>\r\n                  <Font size=\"24.0\" />\r\n               </font>\r\n            </Button>\r\n            <Button fx:id=\"logOut\" layoutX=\"347.0\" layoutY=\"88.0\" mnemonicParsing=\"false\" prefHeight=\"55.0\" prefWidth=\"199.0\" style=\"-fx-background-color: #8ecddd; -fx-background-radius: 30;\" text=\"No, Logout.\">\r\n               <font>\r\n                  <Font size=\"24.0\" />\r\n               </font>\r\n            </Button>\r\n         </children>\r\n      </AnchorPane>\r\n   </bottom>\r\n</BorderPane>\r\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/main/resources/com/example/ctzq/loggedin.fxml b/src/main/resources/com/example/ctzq/loggedin.fxml
++--- a/src/main/resources/com/example/ctzq/loggedin.fxml	(revision 8b839c64d75a0b7580093678684126276c3203ba)
+++++ b/src/main/resources/com/example/ctzq/loggedin.fxml	(date 1698805089825)
++@@ -7,39 +7,35 @@
++ <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
++    <top>
++       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffcc70;" BorderPane.alignment="CENTER">
++-         <children>
++-            <Label layoutX="90.0" layoutY="80.0" prefHeight="40.0" prefWidth="420.0" style="-fx-border-color: #8ecddd; -fx-background-radius: 30;" text="Citizenship test for all citizens to take.">
++-               <font>
++-                  <Font size="25.0" />
++-               </font>
++-            </Label>
++-            <Label layoutX="211.0" layoutY="150.0" prefHeight="36.0" prefWidth="179.0" text="Are You Ready?">
++-               <font>
++-                  <Font size="25.0" />
++-               </font>
++-            </Label>
++-            <Label fx:id="welcome_text" layoutX="242.0" layoutY="23.0" prefHeight="40.0" prefWidth="115.0" text="Welcome!">
++-               <font>
++-                  <Font size="25.0" />
++-               </font>
++-            </Label>
++-         </children>
+++         <Label layoutX="90.0" layoutY="80.0" prefHeight="40.0" prefWidth="420.0" text="Citizenship test for all citizens to take.">
+++            <font>
+++               <Font size="25.0" />
+++            </font>
+++         </Label>
+++         <Label layoutX="211.0" layoutY="150.0" prefHeight="36.0" prefWidth="179.0" text="Are You Ready?">
+++            <font>
+++               <Font size="25.0" />
+++            </font>
+++         </Label>
+++         <Label fx:id="welcome_text" layoutX="242.0" layoutY="23.0" prefHeight="40.0" prefWidth="115.0" text="Welcome!">
+++            <font>
+++               <Font size="25.0" />
+++            </font>
+++         </Label>
++       </AnchorPane>
++    </top>
++    <bottom>
++       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: whitw;" BorderPane.alignment="CENTER">
++-         <children>
++-            <Button fx:id="startQuiz" layoutX="70.0" layoutY="86.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="199.0" style="-fx-background-color: #8ecddd; -fx-background-radius: 30;" text="Yes, I'm ready.">
++-               <font>
++-                  <Font size="24.0" />
++-               </font>
++-            </Button>
++-            <Button fx:id="logOut" layoutX="347.0" layoutY="88.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="199.0" style="-fx-background-color: #8ecddd; -fx-background-radius: 30;" text="No, Logout.">
++-               <font>
++-                  <Font size="24.0" />
++-               </font>
++-            </Button>
++-         </children>
+++         <Button fx:id="startQuiz" layoutX="70.0" layoutY="86.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="199.0" style="-fx-background-color: #8ecddd; -fx-background-radius: 30;" text="Yes, I'm ready.">
+++            <font>
+++               <Font size="24.0" />
+++            </font>
+++         </Button>
+++         <Button fx:id="logOut" layoutX="347.0" layoutY="88.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="199.0" style="-fx-background-color: #8ecddd; -fx-background-radius: 30;" text="No, Logout.">
+++            <font>
+++               <Font size="24.0" />
+++            </font>
+++         </Button>
++       </AnchorPane>
++    </bottom>
++ </BorderPane>
++Index: src/main/resources/com/example/ctzq/register.fxml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.image.*?>\r\n<?import javafx.scene.layout.*?>\r\n<?import javafx.scene.text.*?>\r\n\r\n<BorderPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.ctzq.ControllerTwo\">\r\n   <center>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"350.0\" BorderPane.alignment=\"CENTER\">\r\n         <Label layoutX=\"100.0\" layoutY=\"40.0\" text=\"Resister Page\">\r\n            <font>\r\n               <Font name=\"Courier New Bold\" size=\"24.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"15.0\" layoutY=\"98.0\" text=\"Full Name:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"14.0\" layoutY=\"141.0\" text=\"Date of Birth:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"14.0\" layoutY=\"227.0\" text=\"Nationality:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"15.0\" layoutY=\"184.0\" text=\"Gender:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <TextField fx:id=\"user_name\" layoutX=\"120.0\" layoutY=\"93.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" promptText=\"Enter Full Name\" />\r\n         <DatePicker fx:id=\"dateOfBirth\" layoutX=\"120.0\" layoutY=\"136.0\" prefHeight=\"26.0\" prefWidth=\"164.0\" promptText=\"Enter Date Of Birth\" />\r\n         <ChoiceBox fx:id=\"gender\" layoutX=\"120.0\" layoutY=\"179.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" />\r\n         <TextField fx:id=\"nationality\" layoutX=\"120.0\" layoutY=\"222.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" promptText=\"Enter Your Nationality\" />\r\n         <Label layoutX=\"17.0\" layoutY=\"270.0\" text=\"Password:\">\r\n            <font>\r\n               <Font name=\"Century Gothic Bold\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <TextField fx:id=\"pass_word\" layoutX=\"120.0\" layoutY=\"265.0\" prefHeight=\"26.0\" prefWidth=\"163.0\" promptText=\"Set You Password\" />\r\n         <Button fx:id=\"backto_login\" layoutX=\"263.0\" layoutY=\"344.0\" mnemonicParsing=\"false\" style=\"-fx-background-color: white;\" text=\"Login\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n         <Label layoutX=\"116.0\" layoutY=\"350.0\" text=\"Already Registered?\">\r\n            <font>\r\n               <Font name=\"Courier New\" size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n         <Button fx:id=\"sign_up\" layoutX=\"116.0\" layoutY=\"307.0\" mnemonicParsing=\"false\" prefHeight=\"27.0\" prefWidth=\"117.0\" style=\"-fx-background-color: #ffcc70;\" text=\"Sign-Up\" textFill=\"#22668d\" underline=\"true\">\r\n            <font>\r\n               <Font size=\"13.0\" />\r\n            </font>\r\n         </Button>\r\n      </AnchorPane>\r\n   </center>\r\n   <left>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"250.0\" style=\"-fx-background-color: #ffcc70;\" BorderPane.alignment=\"CENTER\">\r\n         <ImageView fitHeight=\"150.0\" fitWidth=\"180.0\" layoutX=\"35.0\" layoutY=\"70.0\" pickOnBounds=\"true\">\r\n            <Image url=\"@frontlogo.png\" />\r\n         </ImageView>\r\n         <Label layoutX=\"90.0\" layoutY=\"220.0\" text=\"ctzQ\">\r\n            <font>\r\n               <Font name=\"Courier New\" size=\"30.0\" />\r\n            </font>\r\n         </Label>\r\n         <Label layoutX=\"65.0\" layoutY=\"343.0\" text=\"Contact: 9841880507\">\r\n            <font>\r\n               <Font size=\"13.0\" />\r\n            </font>\r\n         </Label>\r\n      </AnchorPane>\r\n   </left>\r\n</BorderPane>\r\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/main/resources/com/example/ctzq/register.fxml b/src/main/resources/com/example/ctzq/register.fxml
++--- a/src/main/resources/com/example/ctzq/register.fxml	(revision 8b839c64d75a0b7580093678684126276c3203ba)
+++++ b/src/main/resources/com/example/ctzq/register.fxml	(date 1698804264943)
++@@ -1,5 +1,6 @@
++ <?xml version="1.0" encoding="UTF-8"?>
++ 
+++<?import java.lang.*?>
++ <?import javafx.scene.control.*?>
++ <?import javafx.scene.image.*?>
++ <?import javafx.scene.layout.*?>
++@@ -35,7 +36,11 @@
++          </Label>
++          <TextField fx:id="user_name" layoutX="120.0" layoutY="93.0" prefHeight="26.0" prefWidth="163.0" promptText="Enter Full Name" />
++          <DatePicker fx:id="dateOfBirth" layoutX="120.0" layoutY="136.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Date Of Birth" />
++-         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0" />
+++         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0">
+++            <String fx:value="Male" />
+++            <String fx:value="Female" />
+++            <String fx:value="Other" />
+++         </ChoiceBox>
++          <TextField fx:id="nationality" layoutX="120.0" layoutY="222.0" prefHeight="26.0" prefWidth="163.0" promptText="Enter Your Nationality" />
++          <Label layoutX="17.0" layoutY="270.0" text="Password:">
++             <font>
++@@ -43,7 +48,7 @@
++             </font>
++          </Label>
++          <TextField fx:id="pass_word" layoutX="120.0" layoutY="265.0" prefHeight="26.0" prefWidth="163.0" promptText="Set You Password" />
++-         <Button fx:id="backto_login" layoutX="263.0" layoutY="344.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Login" textFill="#22668d" underline="true">
+++         <Button fx:id="backto_login" layoutX="263.0" layoutY="344.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 30;" text="Login" textFill="#22668d" underline="true">
++             <font>
++                <Font size="13.0" />
++             </font>
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5929ed2d-2186-4eed-89df-ab80abcb46aa\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2XNeaXx1gH0cv9vTsJTLYrZLtrY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.example.ctzq\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\user\\Desktop\\5th Semester IIMS College\\Advanced Programming\\javacode\\ctzQ\\src\\main\\resources\\com\\example\\ctzq\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5929ed2d-2186-4eed-89df-ab80abcb46aa\" name=\"Changes\" comment=\"\" />\r\n      <created>1698474029123</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1698474029123</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++--- a/.idea/workspace.xml	(revision 8b839c64d75a0b7580093678684126276c3203ba)
+++++ b/.idea/workspace.xml	(date 1698999648089)
++@@ -4,7 +4,13 @@
++     <option name="autoReloadType" value="SELECTIVE" />
++   </component>
++   <component name="ChangeListManager">
++-    <list default="true" id="5929ed2d-2186-4eed-89df-ab80abcb46aa" name="Changes" comment="" />
+++    <list default="true" id="5929ed2d-2186-4eed-89df-ab80abcb46aa" name="Changes" comment="">
+++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/HelloApplication.java" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/frontlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/frontlogo.png" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/loggedin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/loggedin.fxml" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" afterDir="false" />
+++    </list>
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++@@ -34,14 +40,15 @@
++     <option name="hideEmptyMiddlePackages" value="true" />
++     <option name="showLibraryContents" value="true" />
++   </component>
++-  <component name="PropertiesComponent">{
++-  &quot;keyToString&quot;: {
++-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+++  <component name="PropertiesComponent"><![CDATA[{
+++  "keyToString": {
+++    "RunOnceActivity.OpenProjectViewOnStart": "true",
+++    "RunOnceActivity.ShowReadmeOnStart": "true",
+++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+++    "git-widget-placeholder": "master",
+++    "settings.editor.selected.configurable": "MavenSettings"
++   }
++-}</component>
+++}]]></component>
++   <component name="RecentsManager">
++     <key name="CreateClassDialog.RecentsKey">
++       <recent name="com.example.ctzq" />
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1700149033170)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM__Changes_.xml	(date 1700149033170)
+@@ -0,0 +1,9 @@
++<changelist name="Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]" date="1699706661609" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/11/2023 6:29 PM [Changes]" />
++  <binary>
++    <option name="BEFORE_PATH" value="src/main/resources/com/example/ctzq/frontlogo.png" />
++    <option name="AFTER_PATH" value="src/main/resources/com/example/ctzq/frontlogo.png" />
++    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/frontlogo.png" />
++  </binary>
++</changelist>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_X\" default=\"true\" project-jdk-name=\"21\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
++++ b/.idea/misc.xml	(date 1699707625655)
+@@ -8,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5929ed2d-2186-4eed-89df-ab80abcb46aa\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/ctzq/submit.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/ctzq/Dashboard.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/ctzq/Dashboard.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n        <option value=\"FxmlFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHome\" value=\"Use Maven wrapper\" />\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2XNeaXx1gH0cv9vTsJTLYrZLtrY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_directory_selection&quot;: &quot;E:/4thSem/AdvanceProgram/www/ctzQ/src/main/java/com/example/ctzq&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.example.ctzq\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\user\\Desktop\\5th Semester IIMS College\\Advanced Programming\\javacode\\ctzQ\\src\\main\\resources\\com\\example\\ctzq\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5929ed2d-2186-4eed-89df-ab80abcb46aa\" name=\"Changes\" comment=\"\" />\r\n      <created>1698474029123</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1698474029123</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision fe2f3d537244c15a56c36e10b641b22c483e6c9f)
++++ b/.idea/workspace.xml	(date 1699709800462)
+@@ -5,12 +5,17 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5929ed2d-2186-4eed-89df-ab80abcb46aa" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/submit.fxml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/frontlogo.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2023_6_29_PM__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Dashboard.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Controller.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/HelloApplication.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/frontlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/frontlogo.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/loggedin.fxml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -20,22 +25,15 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
++        <option value="FxmlFile" />
+         <option value="Interface" />
+         <option value="Class" />
+-        <option value="FxmlFile" />
+       </list>
+     </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="MavenImportPreferences">
+-    <option name="generalSettings">
+-      <MavenGeneralSettings>
+-        <option name="mavenHome" value="Use Maven wrapper" />
+-        <option name="useMavenConfig" value="true" />
+-      </MavenGeneralSettings>
+-    </option>
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="ProblemsViewState">
+     <option name="selectedTabId" value="CurrentFile" />
+@@ -54,12 +52,7 @@
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;last_directory_selection&quot;: &quot;E:/4thSem/AdvanceProgram/www/ctzQ/src/main/java/com/example/ctzq&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
+@@ -71,9 +64,6 @@
+     </key>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="SvnConfiguration">
+-    <configuration />
+-  </component>
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+       <changelist id="5929ed2d-2186-4eed-89df-ab80abcb46aa" name="Changes" comment="" />
+@@ -84,8 +74,4 @@
+     </task>
+     <servers />
+   </component>
+-  <component name="XSLT-Support.FileAssociations.UIState">
+-    <expand />
+-    <select />
+-  </component>
+ </project>
+\ No newline at end of file
