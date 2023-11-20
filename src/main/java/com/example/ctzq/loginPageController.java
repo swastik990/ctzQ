@@ -16,9 +16,7 @@ import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
 
-
 public class loginPageController implements Initializable {
-
         @FXML
         private Button registerpage_button;
 
@@ -146,9 +144,6 @@ public class loginPageController implements Initializable {
     }
 
         private boolean passwordsMatch(String enteredPassword, String storedPassword) {
-            // Implement a secure password comparison method, for example using BCrypt
-            // Example: return BCrypt.check(enteredPassword, storedPassword);
-            // Note: You need to add the BCrypt library to your project dependencies.
             return enteredPassword.equals(storedPassword);
         }
 

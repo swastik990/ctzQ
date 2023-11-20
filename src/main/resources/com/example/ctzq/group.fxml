@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.Group">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+            <Label layoutX="26.0" layoutY="106.0" prefHeight="243.0" prefWidth="547.0" style="-fx-background-color: #8ECDDD; -fx-background-radius: 18;" textAlignment="JUSTIFY" wrapText="true">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffcc70" height="127.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="back_dashboard" layoutX="245.0" layoutY="364.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: #ffcc70; -fx-background-radius: 30; -fx-cursor: hand;" text="Dashboard" textFill="#22668d" underline="true">
+                <font>
+                    <Font name="System Bold Italic" size="13.0" />
+                </font>
+            </Button>
+            <Label layoutX="59.0" layoutY="100.0" prefHeight="30.0" prefWidth="54.0" text="ctzQ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="106.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true">
+                <Image url="@frontlogo.png" />
+            </ImageView>
+            <Label layoutX="464.0" layoutY="105.0" text="Contact: 9841880507">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </Label>
+            <Label layoutX="171.0" layoutY="21.0" prefHeight="42.0" prefWidth="257.0" text="Symbolic Notation">
+                <font>
+                    <Font name="Courier New Bold" size="24.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="241.0" layoutY="70.0" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #8ECDDD; -fx-background-radius: 18;" text="Group Members">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="200.0" prefHeight="42.0" prefWidth="202.0" text="Prashanna Maharjan">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label  alignment="CENTER" layoutX="347.0" layoutY="196.0" prefHeight="50.0" prefWidth="73.0">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="263.0" layoutY="196.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="238.0" prefHeight="42.0" prefWidth="220.0" text="Samyak Bikram Singh ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="276.0" prefHeight="42.0" prefWidth="194.0" text="Swastik Ghimire ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="263.0" layoutY="234.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="263.0" layoutY="272.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="347.0" layoutY="272.0" prefHeight="50.0" prefWidth="99.0" text="0355458 ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="347.0" layoutY="234.0" prefHeight="50.0" prefWidth="100.0" text="0355672 ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="130.0" prefHeight="42.0" prefWidth="194.0" text="Aasis Shrestha ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="166.0" prefHeight="42.0" prefWidth="194.0" text="Binesh Shrestha ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="263.0" layoutY="162.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="263.0" layoutY="126.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="347.0" layoutY="162.0" prefHeight="50.0" prefWidth="102.0" text="0355623 ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="347.0" layoutY="126.0" prefHeight="50.0" prefWidth="101.0" text="0355710 ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="347.0" layoutY="196.0" prefHeight="50.0" prefWidth="92.0" text="0355788">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+        </AnchorPane>
+    </center>
+</BorderPane>

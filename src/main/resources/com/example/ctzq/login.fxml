@@ -42,12 +42,12 @@
          </Label>
          <TextField fx:id="username" layoutX="117.0" layoutY="115.0" promptText="Enter username" />
          <PasswordField fx:id="password" layoutX="117.0" layoutY="174.0" promptText="Enter password" />
-         <Button fx:id="loginButton" layoutX="99.0" layoutY="245.0" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #FFCC70;" text="Login" textFill="#22668d">
+         <Button fx:id="loginButton" layoutX="99.0" layoutY="245.0" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #FFCC70; -fx-cursor: hand;" text="Login" textFill="#22668d">
             <font>
                <Font size="13.0" />
             </font>
          </Button>
-         <Button fx:id="registerpage_button" layoutX="203.0" layoutY="321.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Register here," textFill="#22668d" underline="true">
+         <Button fx:id="registerpage_button" layoutX="203.0" layoutY="321.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-cursor: hand;" text="Register here," textFill="#22668d" underline="true">
             <font>
                <Font name="Courier New" size="13.0" />
             </font>

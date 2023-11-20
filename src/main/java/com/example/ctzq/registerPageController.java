@@ -8,7 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-
+import java.io.FileWriter;
 import java.sql.*;
 
 import java.io.IOException;
@@ -52,20 +52,22 @@ public class registerPageController implements Initializable {
             String password = pass_word.getText();
 
             //calling method
-            storeInDatabase(userName, dob, selectedGender, selectedNationality, password);
+            storeInDatabaseandtxt(userName, dob, selectedGender, selectedNationality, password);
         });
 
     }
 
 
-    // Method to store values in the database
-    private void storeInDatabase(String userName, LocalDate dob, String gender, String nationality, String password) {
+
+
+    //method to store values
+    private void storeInDatabaseandtxt(String userName, LocalDate dob, String gender, String nationality, String password) {
         if (userName.isEmpty() || dob == null || gender == null || gender.isEmpty() || nationality == null || nationality.isEmpty() || password.isEmpty()) {
             // Display an error message for empty fields
             showErrorMessage("Credentials cannot be empty.");
             return;
         }
-
+        //to store the components in database
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ctzqdb", "root", "Infiniti@111");
              PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO user_info (user_name, dob, gender, nationality, password) VALUES (?, ?, ?, ?, ?)")) {
 
@@ -77,6 +79,16 @@ public class registerPageController implements Initializable {
 
             //to execute
             preparedStatement.executeUpdate();
+
+            //to store the components in a txt files
+            try (FileWriter writer = new FileWriter("Candidate.txt", true)) {
+                String userInfo = String.format("Username: %s, DOB: %s, Gender: %s, Nationality: %s, Password: %s%n",
+                        userName, dob, gender, nationality, password);
+                writer.write(userInfo);
+                writer.flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
             //After registering the credentials
             showSuccessMessage("User registration successful, Now Login!");

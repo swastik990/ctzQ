@@ -13,21 +13,21 @@
                <Font name="Courier New Bold" size="24.0" />
             </font>
          </Label>
-         <Button fx:id="playQuiz" layoutX="117.0" layoutY="122.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ffcc70;" text="Play Quiz" textFill="#22668d">
+         <Button fx:id="playQuiz" layoutX="117.0" layoutY="122.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ffcc70; -fx-cursor: hand;" text="Play Quiz" textFill="#22668d">
             <font>
                <Font size="20.0" />
             </font>
          </Button>
-         <Button fx:id="sign_up1" layoutX="109.0" layoutY="204.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="134.0" style="-fx-background-color: #ffcc70;" text="View Result" textFill="#22668d">
-            <font>
-               <Font size="20.0" />
-            </font>
-         </Button>
-         <Button fx:id="backto_login" layoutX="35.0" layoutY="339.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="58.0" style="-fx-background-color: #8ECDDD;" text="Back" underline="true">
+         <Button fx:id="backto_login" layoutX="35.0" layoutY="339.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="58.0" style="-fx-background-color: #8ECDDD; -fx-cursor: hand;" text="Back" underline="true">
             <font>
                <Font size="13.0" />
             </font>
          </Button>
+         <ImageView fitHeight="41.0" fitWidth="51.0" layoutX="285.0" layoutY="332.0" pickOnBounds="true">
+            <image>
+               <Image url="@frontlogo.png" />
+            </image>
+         </ImageView>
       </AnchorPane>
    </center>
    <left>

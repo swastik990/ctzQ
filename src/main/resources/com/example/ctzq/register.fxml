@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.collections.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<?import java.lang.String?>
 
-<?import javafx.collections.FXCollections?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.registerPageController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
@@ -36,8 +36,8 @@
             </font>
          </Label>
          <TextField fx:id="user_name" layoutX="120.0" layoutY="93.0" prefHeight="26.0" prefWidth="163.0" promptText="Enter Full Name" />
-         <DatePicker fx:id="dateOfBirth" layoutX="120.0" layoutY="136.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Date Of Birth" />
-         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0">
+         <DatePicker fx:id="dateOfBirth" layoutX="120.0" layoutY="136.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Date Of Birth" style="-fx-cursor: hand;" />
+         <ChoiceBox fx:id="gender" layoutX="120.0" layoutY="179.0" prefHeight="26.0" prefWidth="163.0" style="-fx-cursor: hand;">
             <items>
                <FXCollections fx:factory="observableArrayList">
                   <String fx:value="Male" />
@@ -53,7 +53,7 @@
             </font>
          </Label>
          <TextField fx:id="pass_word" layoutX="120.0" layoutY="265.0" prefHeight="26.0" prefWidth="163.0" promptText="Set You Password" />
-         <Button fx:id="backto_login" layoutX="263.0" layoutY="344.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Login" textFill="#22668d" underline="true">
+         <Button fx:id="backto_login" layoutX="263.0" layoutY="344.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-cursor: hand;" text="Login" textFill="#22668d" underline="true">
             <font>
                <Font size="13.0" />
             </font>
@@ -63,12 +63,12 @@
                <Font name="Courier New" size="13.0" />
             </font>
          </Label>
-         <Button fx:id="sign_up" layoutX="116.0" layoutY="307.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ffcc70;" text="Sign-Up" textFill="#22668d" underline="true">
+         <Button fx:id="sign_up" layoutX="116.0" layoutY="307.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ffcc70; -fx-cursor: hand;" text="Sign-Up" textFill="#22668d" underline="true">
             <font>
                <Font size="13.0" />
             </font>
          </Button>
-         <ChoiceBox fx:id="nationality" layoutX="120.0" layoutY="222.0" prefHeight="26.0" prefWidth="163.0">
+         <ChoiceBox fx:id="nationality" layoutX="120.0" layoutY="222.0" prefHeight="26.0" prefWidth="163.0" style="-fx-cursor: hand;">
             <items>
             <FXCollections fx:factory="observableArrayList">
                <String fx:value="Malaysia" />

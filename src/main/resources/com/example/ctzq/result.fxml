@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.ctzq.Result"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ctzq.Result">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+            <Label fx:id="comments" contentDisplay="CENTER" layoutX="26.0" layoutY="106.0" prefHeight="76.0" prefWidth="547.0" style="-fx-background-color: #8ECDDD; -fx-background-radius: 18;" text=" Congratulations, .................................................................." textAlignment="JUSTIFY" wrapText="true">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffcc70" height="127.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="to_dashboard" layoutX="21.0" layoutY="354.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: #ffcc70; -fx-background-radius: 30; -fx-cursor: hand;" text="Dashboard" textFill="#22668d" underline="true">
+                <font>
+                    <Font name="System Bold Italic" size="13.0" />
+                </font>
+            </Button>
+            <Label layoutX="59.0" layoutY="100.0" prefHeight="30.0" prefWidth="54.0" text="ctzQ">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="106.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true">
+                <Image url="@frontlogo.png" />
+            </ImageView>
+            <Label layoutX="464.0" layoutY="14.0" text="Contact: 9841880507">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="39.0" prefHeight="42.0" prefWidth="93.0" text="Result">
+                <font>
+                    <Font name="Courier New Bold" size="24.0" />
+                </font>
+            </Label>
+            <Button fx:id="to_group" layoutX="470.0" layoutY="354.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: #ffcc70; -fx-background-radius: 30; -fx-cursor: hand;" text="Group Details" textFill="#22668d" underline="true">
+                <font>
+                    <Font name="System Bold Italic" size="13.0" />
+                </font>
+            </Button>
+            <Label fx:id="remark" alignment="CENTER" layoutX="487.0" layoutY="49.0" prefHeight="64.0" prefWidth="74.0" style="-fx-background-color: #8ECDDD; -fx-background-radius: 18;" text="PASS/FAIL">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="200.0" prefHeight="42.0" prefWidth="194.0" text="Your Total Score">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="correct_progress1" alignment="CENTER" layoutX="347.0" layoutY="196.0" prefHeight="50.0" prefWidth="73.0">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="226.0" layoutY="196.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="242.0" prefHeight="42.0" prefWidth="194.0" text="Your Best">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="284.0" prefHeight="42.0" prefWidth="194.0" text="Your Worst">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="226.0" layoutY="238.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <ProgressIndicator fx:id="correct_progress" layoutX="477.0" layoutY="232.0" prefHeight="102.0" prefWidth="87.0" progress="0.71" style="-fx-border-radius: 14px; -fx-progress-color: #8ECDDD; -fx-font-size: 30px; -fx-font-weight: 900;" />
+            <Label alignment="CENTER" layoutX="226.0" layoutY="280.0" prefHeight="50.0" prefWidth="73.0" text=":">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="worst" alignment="CENTER" layoutX="347.0" layoutY="280.0" prefHeight="50.0" prefWidth="73.0" text="20">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="best" alignment="CENTER" layoutX="347.0" layoutY="238.0" prefHeight="50.0" prefWidth="73.0" text="30">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="464.0" layoutY="196.0" prefHeight="34.0" prefWidth="94.0" text="Accuracy">
+                <font>
+                    <Font name="Courier New Bold" size="18.0" />
+                </font>
+            </Label>
+        </AnchorPane>
+    </center>
+</BorderPane>

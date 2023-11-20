@@ -6,6 +6,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import javafx.animation.PauseTransition;
 import javafx.util.Duration;
 import javafx.scene.control.Button;
@@ -24,7 +27,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Quiz {
+public class Quiz implements Initializable{
 
     @FXML
     private ProgressBar progressBar;
@@ -38,9 +41,13 @@ public class Quiz {
     @FXML
     public Button option1, option2, option3, option4;
 
+    private boolean isOptionSelected = false;
 
-    static int correct = 0;
-    static int wrong = 0;
+    static int correct =1;
+    static int wrong =1 ;
+
+
+
 
 
     @FXML
@@ -52,7 +59,7 @@ public class Quiz {
     private Button load_submit;
 
 
-    private int currentPage = 1;
+    static int currentPage = 1;
     private int totalPages = 20;
 
 
@@ -60,80 +67,38 @@ public class Quiz {
         backto_dashboard.setOnAction(event -> backButton(event));
         load_submit.setOnAction(event -> nextButton(event));
 
+        // Add event handlers for each option
+        option1.setOnAction(event -> handleOptionSelected(option1));
+        option2.setOnAction(event -> handleOptionSelected(option2));
+        option3.setOnAction(event -> handleOptionSelected(option3));
+        option4.setOnAction(event -> handleOptionSelected(option4));
+
         loadQuestions();
+
     }
 
-    @FXML
-    public void opt1clicked(ActionEvent event) {
-        handleOptionClick(option1);
+    public String selectedUserAnswer;
 
-        checkAnswer(option1.getText().toString());
+    int[] score;
 
-        if (checkAnswer(option1.getText().toString())) {
-            correct = correct + 1;
-        } else {
-            wrong = wrong + 1;
-        }
+    private void handleOptionSelected(Button selectedOption) {
+        // Enable the nextButton when an option is selected
+        isOptionSelected = true;
+        selectedUserAnswer = selectedOption.getText();
+        load_submit.setDisable(false);
+
+
+
+
+        option1.setDisable(option1 != selectedOption);
+        option2.setDisable(option2 != selectedOption);
+        option3.setDisable(option3 != selectedOption);
+        option4.setDisable(option4 != selectedOption);
+
+
+
     }
 
-    @FXML
-    public void opt2clicked(ActionEvent event) {
-        handleOptionClick(option2);
-        checkAnswer(option2.getText().toString());
-
-        if (checkAnswer(option2.getText().toString())) {
-            correct = correct + 1;
-        } else {
-            wrong = wrong + 1;
-        }
-    }
-
-    @FXML
-    public void opt3clicked(ActionEvent event) {
-        handleOptionClick(option3);
-        checkAnswer(option3.getText().toString());
-
-        if (checkAnswer(option3.getText().toString())) {
-            correct = correct + 1;
-        } else {
-            wrong = wrong + 1;
-        }
-    }
-
-    @FXML
-    public void opt4clicked(ActionEvent event) {
-        handleOptionClick(option4);
-        checkAnswer(option4.getText().toString());
-
-        if (checkAnswer(option4.getText().toString())) {
-            correct = correct + 1;
-        } else {
-            wrong = wrong + 1;
-        }
-    }
-
-
-    private boolean isSelected = false;
-    private void handleOptionClick(Button button) {
-        if (!isSelected) {
-            // Select the option
-            button.setStyle("-fx-background-color: #8ECDDD; -fx-background-radius: 20;");
-            isSelected = true;
-        } else {
-            // Deselect the option
-            button.setStyle("-fx-background-color: #ffcc70; -fx-background-radius: 20;"); // Reset style to default
-            isSelected = false;
-        }
-    }
-
-    private void deselectAllButtons() {
-        // Reset the style for all buttons
-        option1.setStyle("-fx-background-color: #ffcc70; -fx-background-radius: 20;");
-        option2.setStyle("-fx-background-color: #ffcc70; -fx-background-radius: 20;");
-        option3.setStyle("-fx-background-color: #ffcc70; -fx-background-radius: 20;");
-        option4.setStyle("-fx-background-color: #ffcc70; -fx-background-radius: 20;");
-        // Add more buttons if needed
-    }
 
 
     @FXML
@@ -142,6 +107,8 @@ public class Quiz {
         if (currentPage == 1) {
 
             try {
+
+
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
                 Parent root = loader.load();
                 Stage stage = (Stage) backto_dashboard.getScene().getWindow();
@@ -151,39 +118,87 @@ public class Quiz {
             } catch(IOException e) {
                 e.printStackTrace();
             }
-        } else {
-
-            navigatePage(-1);
-            loadQuestions();
+        }else {
+            backto_dashboard.setDisable(true);
         }
         return null;
+    }
+
+
+    public int[] processAnswer(int currentPage, int correct, int wrong) {
+        score = new int[]{correct, wrong};
+
+        if (isOptionSelected) {
+            String userAnswer = selectedUserAnswer;
+            boolean isCorrect = checkAnswer(userAnswer, currentPage);
+
+
+            if (isCorrect) {
+                score[0]++;
+            } else {
+                score[1]++;
+            }
+        }
+
+//        System.out.println(score[0]);
+
+        return score;
     }
 
 
     @FXML
     private void nextButton(ActionEvent event) {
         if (currentPage == 20) {
-
             try {
-
-
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("submit.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("result.fxml"));
                 Parent root = loader.load();
+
+                // Access the controller of the Result.fxml file
+                Result result = loader.getController();
+
+                // Pass the correct and wrong values to the controller
+                int[] updatedScore = processAnswer(currentPage, correct, wrong);
+                System.out.println("next button: " + score[0]);
+                result.setCorrectValue(score[0]);
+                result.initialize();
+
+
                 Stage stage = (Stage) load_submit.getScene().getWindow();
-                stage.setTitle("Submitted!");
+                stage.setTitle("Result!");
                 stage.setScene(new Scene(root, 600, 400));
                 stage.show();
             } catch(IOException e) {
                 e.printStackTrace();
             }
-        }
-       else {
+        } else {
+            // Process the answer and update the correct and wrong scores
+            int[] updatedScore = processAnswer(currentPage, correct, wrong);
+            correct = updatedScore[0];
+            wrong = updatedScore[1];
+
+            // Reset flags for the next question
+            isOptionSelected = false;
+            load_submit.setDisable(true);
+            backto_dashboard.setDisable(true);
+
+            // Navigate to the next page and load the next set of questions
             navigatePage(1);
             loadQuestions();
-            deselectAllButtons();
-        }
 
+            // Enable all options for the next question
+            option1.setDisable(false);
+            option2.setDisable(false);
+            option3.setDisable(false);
+            option4.setDisable(false);
+        }
     }
+
+
+
+
+
+
+
 
 
 
@@ -201,215 +216,64 @@ public class Quiz {
     }
 
 
+
     private void loadQuestions() {
+        // Define the file path for your questions file
+        String filePath = "C:\\Users\\user\\Desktop\\5th Semester IIMS College\\Advanced Programming\\javacode\\ctzQ\\src\\main\\java\\com\\example\\ctzq\\questions.txt";
 
-        if (currentPage == 1) { //Question 1
-            questions.setText("Which famous Thai festival is known for its release of floating lanterns into the sky?");
-            option1.setText("Songkran");
-            option2.setText("Loy Krathong");
-            option3.setText("Chinese New Year");
-            option4.setText("Diwali");
-        } if (currentPage == 2) { //Question 2
-            questions.setText("What is the name of the famous street food market in Kuala Lumpur?");
-            option1.setText("Jalan Alor");
-            option2.setText("Petaling Street");
-            option3.setText("Jonker Street");
-            option4.setText("Gurney Drive");
-        } if (currentPage == 3) { //Question 3
-            questions.setText("Which Thai festival is celebrated annually with water fights and is known as the Thai New Year?");
-            option1.setText("Songkran");
-            option2.setText("Loy Krathong");
-            option3.setText("Chinese New Year");
-            option4.setText("Diwali");
-        } if (currentPage == 4) { //Question 4
-            questions.setText("What is the name of the famous shopping street in Singapore?");
-            option1.setText("Orchard Road");
-            option2.setText("Bugis Street");
-            option3.setText("Haji Lane");
-            option4.setText("Clarke Quay");
-        } if (currentPage == 5) { //Question 5
-            questions.setText("Which city in Thailand is famous for its ancient temples, including the Wat Arun and Wat Phra Kaew?");
-            option1.setText("Bangkok");
-            option2.setText("Chiang Mai");
-            option3.setText("Phuket");
-            option4.setText("Pattaya");
-        } if (currentPage == 6) { //Question 6
-            questions.setText("Which traditional Malaysian dish is made of rice cooked in coconut milk and served with various side dishes?");
-            option1.setText("Nasi Lemak");
-            option2.setText("Roti Canai");
-            option3.setText("Char Kway Teow");
-            option4.setText("Laksa");
-        } if (currentPage == 7) { //Question 7
-            questions.setText("Which festival celebrates the Chinese Lunar New Year in Singapore?");
-            option1.setText("Deepavali");
-            option2.setText("Hari Raya Puasa");
-            option3.setText("Vesak Day");
-            option4.setText("Chinese New Year");
-        } if (currentPage == 8) { //Question 8
-            questions.setText("Who is the current Prime Minister of Malaysia (as of 2021)?");
-            option1.setText("Mahathir Mohamad");
-            option2.setText("Najib Razak");
-            option3.setText("Muhyiddin Yassin");
-            option4.setText("Anwar Ibrahim");
-        } if (currentPage == 9) { //Question 9
-            questions.setText("Which country is known for its traditional dance form called Thai classical dance?");
-            option1.setText("Thailand");
-            option2.setText("Malaysia");
-            option3.setText("Indonesia");
-            option4.setText("Singapore");
-        } if (currentPage == 10) { //Question 10
-            questions.setText("Which river is considered the lifeline of Thailand and flows through the capital city?");
-            option1.setText("Mekong River");
-            option2.setText("Chao Phraya River");
-            option3.setText("Irrawaddy River");
-            option4.setText("Yangtze River");
-        } if (currentPage == 11) { //Question 11
-            questions.setText("What is the official language of Thailand?");
-            option1.setText("Thai");
-            option2.setText("English");
-            option3.setText("Mandarin");
-            option4.setText("Malay");
-        } if (currentPage == 12) { //Question 12
-            questions.setText("Thailand is known for its rich cultural heritage, with influences from which major religion?");
-            option1.setText("Buddhism");
-            option2.setText("Hinduism");
-            option3.setText("Islam");
-            option4.setText("Christianity");
-        } if (currentPage == 13) { //Question 13
-            questions.setText("Who is considered the founding father of modern Singapore?");
-            option1.setText("Lee Kuan Yew");
-            option2.setText("Goh Chok Tong");
-            option3.setText("Tony Tan");
-            option4.setText("Halimah Yacob");
-        } if (currentPage == 14) { //Question 14
-            questions.setText("Which famous twin towers are located in Kuala Lumpur?");
-            option1.setText("Petronas Twin Towers");
-            option2.setText("Burj Khalifa");
-            option3.setText("Eiffel Tower");
-            option4.setText("Sydney Opera House");
-        } if (currentPage == 15) { //Question 15
-            questions.setText("Which ethnic group forms the majority in Malaysia?");
-            option1.setText("Malay");
-            option2.setText("Chinese");
-            option3.setText("Indian");
-            option4.setText("Indigenous Bumiputera");
-        } if (currentPage == 16) { //Question 16
-            questions.setText("What is the name of the iconic symbol of Singapore, a half-lion half-fish creature?");
-            option1.setText("Merlion");
-            option2.setText("Dragon");
-            option3.setText("Griffin");
-            option4.setText("Chimera");
-        } if (currentPage == 17) { //Question 17
-            questions.setText("When did Singapore gain independence?");
-            option1.setText("1959");
-            option2.setText("1965");
-            option3.setText("1970");
-            option4.setText("1980");
-        } if (currentPage == 18) { //Question 18
-            questions.setText("What is the official religion of Malaysia?");
-            option1.setText("Islam");
-            option2.setText("Buddhism");
-            option3.setText("Hinduism");
-            option4.setText("Christianity");
-        } if (currentPage == 19) { //Question 19
-            questions.setText("Which island is known for its beautiful beaches and clear waters in Malaysia?");
-            option1.setText("Langkawi");
-            option2.setText("Tioman");
-            option3.setText("Pangkor");
-            option4.setText("Redang");
-        } if (currentPage == 20) { //Question 20
-            questions.setText("Which country is known for its unique cultural festivals like Thaipusam and Hungry Ghost Festival?");
-            option1.setText("Singapore");
-            option2.setText("Thailand");
-            option3.setText("Malaysia");
-            option4.setText("Indonesia");
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            // Skip lines until you reach the current question
+            for (int i = 1; i < currentPage; i++) {
+                br.readLine();
+                br.readLine();  // Skip the question
+                br.readLine();  // Skip option1
+                br.readLine();  // Skip option2
+                br.readLine();  // Skip option3
+                br.readLine();  // Skip option4
+            }
+
+            // Read the question and options for the current page
+            questions.setText(br.readLine().trim());
+            option1.setText(br.readLine().trim());
+            option2.setText(br.readLine().trim());
+            option3.setText(br.readLine().trim());
+            option4.setText(br.readLine().trim());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
-
-    boolean checkAnswer(String answer) {
-
-        if (currentPage == 1) {
-            // Question 1
-            return answer.equals("Loy Krathong");
-        }
-        if (currentPage == 2) {
-            // Question 2
-            return answer.equals("Jalan Alor");
-        }
-        if (currentPage == 3) {
-            // Question 3
-            return answer.equals("Songkran");
-        }
-        if (currentPage == 4) {
-            // Question 4
-            return answer.equals("Orchard Road");
-        }
-        if (currentPage == 5) {
-            // Question 5
-            return answer.equals("Bangkok");
-        }
-        if (currentPage == 6) {
-            // Question 6
-            return answer.equals("Nasi Lemak");
-        }
-        if (currentPage == 7) {
-            // Question 7
-            return answer.equals("Chinese New Year");
-        }
-        if (currentPage == 8) {
-            // Question 8
-            return answer.equals("Muhyiddin Yassin");
-        }
-        if (currentPage == 9) {
-            // Question 9
-            return answer.equals("Thailand");
-        }
-        if (currentPage == 10) {
-            // Question 10
-            return answer.equals("Chao Phraya River");
-        }
-        if (currentPage == 11) {
-            // Question 11
-            return answer.equals("Thai");
-        }
-        if (currentPage == 12) {
-            // Question 12
-            return answer.equals("Buddhism");
-        }
-        if (currentPage == 13) {
-            // Question 13
-            return answer.equals("Lee Kuan Yew");
-        }
-        if (currentPage == 14) {
-            // Question 14
-            return answer.equals("Petronas Twin Towers");
-        }
-        if (currentPage == 15) {
-            // Question 15
-            return answer.equals("Malay");
-        }
-        if (currentPage == 16) {
-            // Question 16
-            return answer.equals("Merlion");
-        }
-        if (currentPage == 17) {
-            // Question 17
-            return answer.equals("1965");
-        }
-        if (currentPage == 18) {
-            // Question 18
-            return answer.equals("Islam");
-        }
-        if (currentPage == 19) {
-            // Question 19
-            return answer.equals("Langkawi");
-        }
-        if (currentPage == 20) {
-            // Question 20
-            return answer.equals("Singapore");
-        }
-        return false;
+    private static boolean checkAnswer(String answer, int questionNumber) {
+        return switch (questionNumber) {
+            case 1 -> answer.equals("Loy Krathong");
+            case 2 -> answer.equals("Jalan Alor");
+            case 3 -> answer.equals("Songkran");
+            case 4 -> answer.equals("Orchard Road");
+            case 5 -> answer.equals("Bangkok");
+            case 6 -> answer.equals("Nasi Lemak");
+            case 7 -> answer.equals("Chinese New Year");
+            case 8 -> answer.equals("Muhyiddin Yassin");
+            case 9 -> answer.equals("Thailand");
+            case 10 -> answer.equals("Chao Phraya River");
+            case 11 -> answer.equals("Thai");
+            case 12 -> answer.equals("Buddhism");
+            case 13 -> answer.equals("Lee Kuan Yew");
+            case 14 -> answer.equals("Petronas Twin Towers");
+            case 15 -> answer.equals("Malay");
+            case 16 -> answer.equals("Merlion");
+            case 17 -> answer.equals("1965");
+            case 18 -> answer.equals("Islam");
+            case 19 -> answer.equals("Langkawi");
+            case 20 -> answer.equals("Singapore");
+            default -> false;
+        };
     }
+
+
+
+
+
+
+
 
 }
