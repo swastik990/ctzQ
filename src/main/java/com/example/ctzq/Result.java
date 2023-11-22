@@ -59,10 +59,10 @@ public class Result {
 
         if (correctValue < 10) {
             remark.setText("FAIL");
-            comments.setText("Better Luck next time Hommie.");
+            comments.setText("Better Luck next time.");
         } else {
             remark.setText("PASS");
-            comments.setText("Congratulation on passing The Official CTZQ.YOU ROCK");
+            comments.setText("Congratulation on passing The Official CTZQ.");
         }
 
 

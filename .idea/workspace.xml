@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5929ed2d-2186-4eed-89df-ab80abcb46aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/group.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_16_2023_9_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_16_2023_9_23_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Quiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Submit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/loginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/loginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/registerPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/registerPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/Quiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ctzq/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/result.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/result.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ctzq/submit.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
